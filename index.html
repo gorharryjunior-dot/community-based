@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Connect</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <i class="fas fa-people-group"></i>
+        Community<span>Connect</span>
+    </div>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#announcements">News</a>
+        <a href="#events">Events</a>
+        <a href="#discussion">Community</a>
+        <a href="#reports">Reports</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">WELCOME TO OUR COMMUNITY</span>
+
+        <h1>Together We Build<br>
+        <span>A Better Community</span></h1>
+
+        <p>
+            Connect with your neighbors, discover local events,
+            share ideas and work together to make our community
+            a better place for everyone.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#discussion" class="btn">Join Community</a>
+            <a href="#about" class="btn outline">Learn More</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="download.jpg"
+        alt="Community members together">
+    </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats">
+    <div class="stat">
+        <i class="fas fa-users"></i>
+        <h2 id="memberCount">250+</h2>
+        <p>Community Members</p>
+    </div>
+
+    <div class="stat">
+        <i class="fas fa-calendar-check"></i>
+        <h2>18+</h2>
+        <p>Events Organized</p>
+    </div>
+
+    <div class="stat">
+        <i class="fas fa-handshake"></i>
+        <h2>45+</h2>
+        <p>Volunteers</p>
+    </div>
+
+    <div class="stat">
+        <i class="fas fa-heart"></i>
+        <h2>30+</h2>
+        <p>Projects Completed</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="section-heading">
+        <span>ABOUT US</span>
+        <h2>Building Stronger Communities</h2>
+        <p>Discover what makes our community special.</p>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-image">
+            <img src="download (7).jpg"
+            alt="People working together">
+        </div>
+
+        <div class="about-text">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to bring people together, encourage
+                cooperation, promote development and create a
+                safe and welcoming environment.
+            </p>
+
+            <h2>Our Vision</h2>
+            <p>
+                A united, peaceful and developed community where
+                everyone has an opportunity to contribute and grow.
+            </p>
+
+            <div class="values">
+                <span><i class="fas fa-check-circle"></i> Unity</span>
+                <span><i class="fas fa-check-circle"></i> Respect</span>
+                <span><i class="fas fa-check-circle"></i> Development</span>
+                <span><i class="fas fa-check-circle"></i> Cooperation</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ANNOUNCEMENTS -->
+<section class="section dark-section" id="announcements">
+    <div class="section-heading">
+        <span>COMMUNITY NEWS</span>
+        <h2>Latest Announcements</h2>
+        <p>Stay informed about what is happening around you.</p>
+    </div>
+
+    <div class="cards" id="announcementList">
+        <article class="card">
+            <div class="card-icon"><i class="fas fa-broom"></i></div>
+            <span class="date">COMMUNITY NOTICE</span>
+            <h3>Community Cleaning Day</h3>
+            <p>Residents are invited to participate in our neighborhood cleaning activity.</p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <span class="date">EDUCATION</span>
+            <h3>Youth Education Program</h3>
+            <p>Join our educational activities designed to support young people.</p>
+        </article>
+
+        <article class="card">
+            <div class="card-icon"><i class="fas fa-tree"></i></div>
+            <span class="date">ENVIRONMENT</span>
+            <h3>Tree Planting Campaign</h3>
+            <p>Help us make our environment greener by participating in tree planting.</p>
+        </article>
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+    <div class="section-heading">
+        <span>WHAT'S HAPPENING</span>
+        <h2>Upcoming Events</h2>
+        <p>Participate in activities that bring us together.</p>
+    </div>
+
+    <div class="cards" id="eventList">
+        <article class="card event-card">
+            <div class="event-date">
+                <strong>22</strong>
+                <span>NOV</span>
+            </div>
+            <h3>Community Meeting</h3>
+            <p><i class="fas fa-location-dot"></i> Community Hall</p>
+            <p>Discuss community development projects and ideas.</p>
+            <button class="btn" onclick="joinEvent('Community Meeting')">Join Event</button>
+        </article>
+
+        <article class="card event-card">
+            <div class="event-date">
+                <strong>25</strong>
+                <span>NOV</span>
+            </div>
+            <h3>Environmental Day</h3>
+            <p><i class="fas fa-location-dot"></i> Community Grounds</p>
+            <p>Work together to improve our surroundings.</p>
+            <button class="btn" onclick="joinEvent('Environmental Day')">Join Event</button>
+        </article>
+
+        <article class="card event-card">
+            <div class="event-date">
+                <strong>30</strong>
+                <span>NOV</span>
+            </div>
+            <h3>Youth Talent Day</h3>
+            <p><i class="fas fa-location-dot"></i> Main Hall</p>
+            <p>Celebrate and discover the talents of young people.</p>
+            <button class="btn" onclick="joinEvent('Youth Talent Day')">Join Event</button>
+        </article>
+    </div>
+</section>
+
+<!-- DISCUSSION -->
+<section class="section dark-section" id="discussion">
+    <div class="section-heading">
+        <span>SHARE YOUR IDEAS</span>
+        <h2>Community Discussions</h2>
+        <p>Share positive ideas and communicate with other members.</p>
+    </div>
+
+    <div class="discussion-box">
+        <h3><i class="fas fa-pen"></i> Create a Post</h3>
+
+        <input type="text" id="postName" placeholder="Your name">
+        <textarea id="postContent" placeholder="Share something with the community..."></textarea>
+
+        <button class="btn" onclick="addPost()">Publish Post</button>
+
+        <div id="posts">
+            <article class="post">
+                <div class="avatar">JD</div>
+                <div>
+                    <h4>John Doe</h4>
+                    <p>Let us work together to make our community a better place!</p>
+                    <small>Community Member</small>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- REPORTS -->
+<section class="section" id="reports">
+    <div class="section-heading">
+        <span>MAKE A DIFFERENCE</span>
+        <h2>Report a Community Problem</h2>
+        <p>Help us identify issues that need attention.</p>
+    </div>
+
+    <div class="report-box">
+        <form id="reportForm">
+            <label>Your Name</label>
+            <input type="text" id="reportName" placeholder="Enter your name" required>
+
+            <label>Problem Category</label>
+            <select id="reportCategory" required>
+                <option value="">Select a category</option>
+                <option>Road Damage</option>
+                <option>Garbage Collection</option>
+                <option>Water Problems</option>
+                <option>Street Lighting</option>
+                <option>Environmental Issues</option>
+                <option>Other</option>
+            </select>
+
+            <label>Location</label>
+            <input type="text" id="reportLocation" placeholder="Where is the problem?" required>
+
+            <label>Describe the Problem</label>
+            <textarea id="reportDescription" placeholder="Explain the problem..." required></textarea>
+
+            <button type="submit" class="btn">Submit Report</button>
+        </form>
+
+        <div id="reportMessage"></div>
+    </div>
+</section>
+
+<!-- VOLUNTEER -->
+<section class="volunteer">
+    <div>
+        <span>MAKE AN IMPACT</span>
+        <h2>Become a Community Volunteer</h2>
+        <p>Your time, ideas and skills can make a difference.</p>
+    </div>
+
+    <a href="#contact" class="btn">Become a Volunteer</a>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <div class="section-heading">
+        <span>GET IN TOUCH</span>
+        <h2>Contact Our Community</h2>
+        <p>We would love to hear your ideas and feedback.</p>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class="fas fa-envelope"></i> community@example.com</p>
+            <p><i class="fas fa-phone"></i> +254 700 000 000</p>
+            <p><i class="fas fa-location-dot"></i> Kenya</p>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="contactName" placeholder="Your Name" required>
+            <input type="email" id="contactEmail" placeholder="Your Email" required>
+            <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="logo">
+        <i class="fas fa-people-group"></i>
+        Community<span>Connect</span>
+    </div>
+
+    <p>Connecting People. Building Communities. Creating Change.</p>
+
+    <div class="socials">
+        <a href="#contact" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#contact" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#contact" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+    </div>
+
+    <p class="copyright">© 2026 Community Connect. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
